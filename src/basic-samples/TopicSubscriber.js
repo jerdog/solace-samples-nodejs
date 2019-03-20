@@ -210,7 +210,7 @@ solace.SolclientFactory.init(factoryProps);
 solace.SolclientFactory.setLogLevel(solace.LogLevel.WARN);
 
 // create the subscriber, specifying the name of the subscription topic
-var subscriber = new TopicSubscriber(solace, 'tutorial/topic');
+var subscriber = new TopicSubscriber(solace, 'broadcast/topic');
 
 // subscribe to messages on Solace message router
 subscriber.run(process.argv);

@@ -162,7 +162,7 @@ solace.SolclientFactory.init(factoryProps);
 solace.SolclientFactory.setLogLevel(solace.LogLevel.WARN);
 
 // create the publisher, specifying the name of the subscription topic
-var publisher = new TopicPublisher(solace, 'tutorial/topic');
+var publisher = new TopicPublisher(solace, 'broadcast/topic');
 
 // publish message to Solace message router
 publisher.run(process.argv);
